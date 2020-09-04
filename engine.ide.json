@@ -1,0 +1,20 @@
+{
+    "engineVersion": "1.0.3",
+    "build": {
+        "mainScene": {
+            "2d": "assets/resource/mygame2d.scene",
+            "3d": "assets/resource/mygame.scene"
+        },
+        "usingPlatform": [
+            [
+                "default"
+            ],
+            [
+                "etc1"
+            ],
+            [
+                "etc2"
+            ]
+        ]
+    }
+}
