@@ -1,0 +1,1 @@
+{"textures":{"_MainTex":"Assets/Art/Modle/Monster_1/Textures/Toon__Bat-Green.texture2d"},"shaderParams":{"u_intensity":[1],"u_tintColor":[1,1,1,1],"_Cutoff":[0.01]},"renderStates":{},"renderQueue":2000,"shaderDefinations":{"USE_FOG":true,"USE_ALPHA_TEST":false},"effect":"model_unlit_diffuse","editorInfo":{"assetVersion":2}}

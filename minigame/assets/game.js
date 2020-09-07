@@ -58,22 +58,22 @@
     "platform": [
       "default"
     ],
-    "buildin": "register_39890e97.json",
-    "idePack": "register_a978e574.json"
+    "buildin": "register_f701a7fb.json",
+    "idePack": "register_703487ec.json"
   },
   {
     "platform": [
       "etc1"
     ],
-    "buildin": "register_cb5b4f8e.json",
-    "idePack": "register_a978e574.json"
+    "buildin": "register_16efcc16.json",
+    "idePack": "register_703487ec.json"
   },
   {
     "platform": [
       "etc2"
     ],
-    "buildin": "register_26e34420.json",
-    "idePack": "register_bce3bfd2.json"
+    "buildin": "register_5ad836cd.json",
+    "idePack": "register_72f0b283.json"
   }
 ]
 
@@ -142,12 +142,7 @@
          * Load entry scenes.
          */
         
-    var scenesPromises = [
-      engine.loader.load("resource/mygame.scene", { useFrameSystem: false }).promise,
-      engine.loader.load("resource/mygame2d.scene", { useFrameSystem: false }).promise
-    ];
-    engine.LitePromise.all(scenesPromises).then(function(scenes) {
-      // 加载pack资源
+    engine.loader.load("Assets/Resources/Scene/mytest.scene", { useFrameSystem: false }).promise.then(function (scene) {
       
     if(true){
       /**
@@ -156,8 +151,7 @@
       engine.loader.register(packRegisterPath, urlPrefix).catch(function fn(error){console.error(error)});
     }
   
-      game.playScene(scenes[0]);
-      game.playScene(scenes[1]);
+      game.playScene(scene);
       runGame();
     }).catch(function (error){
       console.error('Fail to load scenes.', error.message, error.stack);
